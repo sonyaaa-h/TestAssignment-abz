@@ -1,0 +1,62 @@
+:root {
+  --primary: #f4e041;
+  --hover: #ffe302;
+  --black: rgba(0, 0, 0, 0.87);
+  --secondary: #00bdd3;
+}
+
+body {
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  background-color: #f8f8f8;
+  padding: 0 16px;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    padding: 0 32px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    padding: 0 60px;
+  }
+}
+
+/* reset */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
