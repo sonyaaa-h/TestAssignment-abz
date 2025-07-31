@@ -1,0 +1,74 @@
+.hero {
+    background-image: url("../../assets/hero-desc.jpg");
+    width: 360px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.infoWrap {
+    width: 328px;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 21px;
+}
+
+.heroText {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.625;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 32px;
+}
+
+.heroLink {
+    font-family: "Nunito", sans-serif;
+    border-radius: 80px;
+    width: 100px;
+    height: 34px;
+    background-color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.87);
+    transition: background-color 0.3s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.heroLink:hover,
+.heroLink:focus {
+    background-color: var(--hover);
+}
+
+@media screen and (min-width: 768px) {
+    .hero {
+        width: 768px;
+    }
+
+    .infoWrap {
+        width: 380px;
+        padding-top: 89px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .hero {
+        width: 1024px;
+        height: 650px;
+    }
+
+    .infoWrap {
+        width: 380px;
+        padding-top: 164px;
+    }
+}

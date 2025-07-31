@@ -1,7 +1,8 @@
 .header {
     display: flex;
     justify-content: space-between;
-    padding: 13px 0;
+    padding: 13px 16px;
+    width: 360px;
 }
 
 .navigate {
@@ -21,8 +22,22 @@
     font-size: 16px;
     line-height: 1.6;
     color: rgba(0, 0, 0, 0.87);
+    transition: background-color 0.3s cubic-bezier(0.65, 0, 0.35, 1);
 }
 
-.navLink:hover, .navLink:focus {
+.navLink:hover,
+.navLink:focus {
     background-color: var(--hover);
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        width: 768px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .header {
+        width: 1024px;
+    }
 }
